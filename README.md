@@ -33,3 +33,4 @@ The following people (and a few others!) helped with this project:
 - [David Newman](github.com/Newms34)
 - [Michael Bae](github.com/michaelbbae)
 - [Noelle Wandel](github.com/noelleantoinette)
+"#Guild Wars 2 Price Alert System" 
