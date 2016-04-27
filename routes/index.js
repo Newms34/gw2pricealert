@@ -17,7 +17,6 @@ router.get('/rfr', function(req, res, next) {
     //refresh price list.	
     var parsedPrice, num = 0,itemsToChange = [];
     var theUrl = 'https://api.guildwars2.com/v2/commerce/prices?ids=' + itIds.join(',');
-    console.log(theUrl)
     https.get(
         theUrl,
         function(response) {
@@ -103,10 +102,10 @@ router.get('/rfr', function(req, res, next) {
         })
     }
 });
-console.log('MAIL',mail.createTransport)
-var transport = mail.createTransport('smtps://user%40gmail.com:pass@smtp.gmail.com');
-transport.verify(function(err,suc){
-	console.log(err,suc)
-})
+// console.log('MAIL',mail.createTransport)
+// var transport = mail.createTransport('smtps://user%40gmail.com:pass@smtp.gmail.com');
+// transport.verify(function(err,suc){
+// 	console.log(err,suc)
+// })
 
 module.exports = router;
