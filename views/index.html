@@ -7,6 +7,20 @@
 
 <body ng-app='mainApp' ng-controller='mainController'>
     <h3>GW2 Item Monitor</h3>
+    <table>
+    	<thead>
+    		<tr>
+    			<th>Item Name</th>
+    			<th>Status</th>
+    		</tr>
+    	</thead>
+    	<tbody>
+    		<tr ng-repeat='it in items'>
+    			<td>{{it.name}}</td>
+    			<td>{{it.stat}}</td>
+    		</tr>
+    	</tbody>
+    </table>
     <button ng-click = 'updateItems()'>Force Update</button>
     <script src="/angular/angular.min.js"></script>
     <script src="/js/main.js"></script>
