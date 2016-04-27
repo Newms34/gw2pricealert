@@ -1,5 +1,0 @@
-{
-	"undefined": "localhost:27017/my-app",
-	"dev": "localhost:27017/my-app",
-	"prod": "localhost/PROD_DB_NAME"
-}
