@@ -7,6 +7,7 @@ mainApp.controller('mainController', function($scope, $http) {
     	$http.get('/rfr').then(function(resp){
     		console.log(resp);
     		$scope.items = resp;
+    		$scope.$digest();
     	})
     }
     $scope.updateItems();
